@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website </title>
+
+    <!-- google fonts -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+<body class="home">
+
+   
+
+        <!-- header section -->
+
+        <header class="primary-header container flex">
+            <div class="header-inner-one flex">
+                <div class="logo">
+                    <img src="/images/logo (1).png" alt="">
+                </div>
+
+                <button class="mobile-close-btn" data-visible="false" area-controls="primary-navigation">
+                    <i class="uil uil-times-circle"></i>
+                </button>
+
+                <nav>
+                    <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                        <li><a class=" fs-100 fs-montserrat bold-500" href="/home.html">Home</a></li>
+                        <li><a class="fs-100 fs-montserrat bold-500" href="/shop.html">Shop</a></li>
+                        <li><a class="fs-100 fs-montserrat bold-500" href="/about.html">About Us</a></li>
+                        <li><a class=" fs-100 fs-montserrat bold-500" href="/blog.html">Blog</a></li>
+                        <li><a class="active fs-100 fs-montserrat bold-500" href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-login flex">
+                <p class="fs-100 fs-montserrat bold-500">login</p>
+                <i class="uil uil-search"></i>
+                <i id="cart-box" area-controls="cart-icon" class="uil uil-shopping-bag"></i>
+
+                <!-- cart box -->
+                 <div id="cart-icon" class="cart-icon" data-visible="false">
+                    <div class="shopping flex">
+                        <p>Shopping Basket</p>
+                        <i id="cross-btn" class="uil uil-times"></i>
+                    </div>
+                    <div class="cart bold-800 flex">
+                        <i class="uil uil-shopping-cart-alt"></i>
+                        <p>Cart is Empty</p>
+                    </div>
+                 </div>
+            </div>
+    
+            <div class="mobile-open-btn">
+                <i class="uil uil-align-right"></i>
+            </div>
+        </header>
+
+        <!-- header section ends  -->
+
+        <section class="shop-feature bg-black grid" style="opacity: 0.85;">
+            <div>
+            <p class="fs-montserrat bg-black" style="color: white; font-size: 2rem;">Contact <span aria-haspopup="true"></span>Us</p>
+            </div>
+        </section>
+
+        <!-- contact section start -->
+
+        <section class="contact-us grid" style="display: grid;">
+            <div class="container1" style="background-color: hsl(var(--clr-gray));;">
+                <h1 id="h1">Contact Us</h1>
+                <!-- <div class="contact-info">
+                <div>
+                    <h1 class="fs-poppins text-red fs-200">Contact-Us</h1>
+                    <h3 class="fs-poppins text-black fs-400">Get in Touch </h3>
+                    <p class="fs-montserrat fs-100">When, While lovely walley Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, fugit.</p>
+                </div>
+                <form action="#" class="contact-form grid">
+                    <div class="grid">
+                        <input type="text" class="bg-gray fs-poppins" style="color: black;" placeholder="Your Email">
+                    </div>
+                    <div class="grid">
+                        <input type="text" class="bg-gray fs-poppins" style="color: black;" placeholder="Phone Number">
+                    </div>
+                    <div>
+                        <textarea class="bg-gray fs-poppins" style="color: black;" rows="10" placeholder="Your Message here"></textarea>
+                    </div>
+                    <div class="contact-btn">
+                        <button class="large-btn bg-red fs-poppins" style="color: white;"></button>
+                    </div>
+                </form> -->
+
+                    <!-- map section -->
+                     
+                    <form class="form1">
+                        <label class="label1" for="name">Name</label>
+                        <input class="input1" type="text" id="name" name="name" required>
+                        
+                        <label class="label1" for="email">Email</label>
+                        <input class="input1"  type="email" id="email" name="email" required>
+                        
+                        <label class="label1" for="subject">Subject</label>
+                        <input class="input1"  type="text" id="subject" name="subject" required>
+                        
+                        <label class="label1" for="message" >Message</label>
+                        <textarea class="textarea1" id="message" name="message" rows="6" required placeholder="write your query..."></textarea>
+                        
+                        <button class="button1" type="submit">Submit</button>
+                    </form>
+            </div>
+            <div class="container1" style="background-color: hsl(var(--clr-gray)); margin-top: 3;">
+            <div class="map-container">
+                <h2 id="h2" style="margin-bottom: 2rem;">Our Location</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.387580484725!2d-122.40641768468153!3d37.785834979757554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c2f074d6f%3A0xb06f7c69ec7b1a76!2sGoogle%20San%20Francisco!5e0!3m2!1sen!2sus!4v1595842568393!5m2!1sen!2sus"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+            </div>
+        </section>
+
+            <!-- support section
+        <section class="support-container grid" style="margin-top: 4rem;">
+
+               <div class="support-info grid">
+                    <img src="images/sup-1.svg" alt="">
+               </div>
+               <div>
+                 <p class="fs-100 fs-poppins">
+                    <span class="fs-200 fs-poppins bold-700">
+                        Email:
+                    </span> Rajnish@gmail.com
+                 </p>
+               </div>
+
+               <div class="support-info grid">
+                    <img src="images/sup-2.svg" alt="">
+                </div>
+            <div>
+             <p class="fs-100 fs-poppins">
+                <span class="fs-200 fs-poppins bold-700">
+                    Phone No:
+                </span> 91+ 902677 XXXX
+             </p>
+           </div>
+
+           <div class="support-info grid">
+                <img src="images/sup-3.svg" alt="">
+           </div>
+           <div>
+                <p class="fs-100 fs-poppins">
+                <span class="fs-200 fs-poppins bold-700">
+                Location:
+                </span> Jaipur Rajasthan
+                </p>
+            </div>
+
+        </section> -->
+
+        <section class="service-section " style="margin-top: 5rem; display: flex; justify-content: space-evenly;">
+            <div class="service">
+                <img src="/images/sup-1.svg" alt="">
+                <div class="service-info1">
+                    <h3 class="fs-poppins fs-300">Email:</h3>
+                    <p class="fs-montserrat fs-50">Rajnish@gmail.com</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="/images/sup-2.svg" alt="">
+                <div class="service-info1">
+                    <h3 class="fs-poppins fs-300">Phone No:</h3>
+                    <p class="fs-montserrat fs-50">91+ 902677 XXXX</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="/images/sup-3.svg" alt="">
+                <div class="service-info1">
+                    <h3 class="fs-poppins fs-300">Location:</h3>
+                    <p class="fs-montserrat fs-50">Jaipur Rajasthan</p>
+                </div>
+            </div>
+        
+          </section>
+
+
+        <!-- contact section ends  -->
+
+        
+        <!-- brand section -->
+        <section class="brands grid">
+            <div>
+                <img src="/images/br-1.png" alt="">
+            </div>
+            <div>
+                <img src="/images/br-2.png" alt="">
+            </div>
+            <div>
+                <img src="/images/br-3.png" alt="">
+            </div>
+            <div>
+                <img src="/images/br-4.png" alt="">
+            </div>
+            <div>
+                <img src="/images/br-5.png" alt="">
+            </div>
+         </section>
+
+         <!-- brand section ends -->
+
+         <!-- footer section -->
+          <section class="footer grid">
+                <div class="footer-logo grid">
+                    <img src="/images/logo (1).png" alt="">
+                    <p class="fs-montserrat fs-100"> There are many variations passages of lorem ipsum available, but he majority have</p>
+                    <div class="social-media flex">
+                        <i class="uil uil-facebook-f"></i>
+                        <i class="uil uil-instagram"></i>
+                        <i class="uil uil-twitter"></i>
+                        <i class="uil uil-linkedin"></i>
+                    </div>
+                </div>
+                    <div class="footer-menu grid">
+                        <h3  class="fs-poppins fs-200 bold-800">Quick Links</h3>
+                        <ul>
+                        <li><a class="fs-montserrat text-black fs-200" href="#">Home</a></li>
+                        <li><a class="fs-montserrat text-black fs-200" href="#">About</a></li>
+                        <li><a class="fs-montserrat text-black fs-200" href="#">Shop</a></li>
+                        <li><a class="fs-montserrat text-black fs-200" href="#">Contact</a></li>
+                    </div>
+                </ul>
+                   
+                <div class="contact grid">
+                    <h3 class="fs-poppins fs-200 bold-800">Contact</h3>
+                    <p class="fs-montserrat">+91 90267 74423 vidhani jaipur Rajasthan</p>
+                </div>
+
+                <div class="emails grid">
+                    <h3  class="fs-poppins fs-200 bold-800">Subscibe to our Email</h3>
+                    <p class="updates fs-poppins fs-300 bold-800">For Latest news and updates</p>
+
+                   <div class="inputField flex bg-gray">
+                       <input type="email" placeholder="Enter your Email" class="fs-montserrat bg-gray">
+                       <button class="bg-red fs-poppins fs-50" style="color: white;">Subscribe</button>
+                   </div>
+
+                </div>
+          </section>
+
+          <!-- footer section ends  -->
+
+          <!-- copyright section starts  -->
+           <section class="copyright">
+            <p class="c-font fs-monsterrat fs-100"> 2024 estore. All rights reserved</p>
+            <p class="fs-monsterrat fs-100 text-align p-top">Privacy Policy. Term and Condition Apply</p>
+           </section>
+
+
+
+    <script src="home.js"></script>
+    <script src="shop.js"></script>
+    <script src="about.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website </title>
+
+    <!-- google fonts -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+<body class="home">
+
+   
+
+        <!-- header section -->
+
+        <header class="primary-header container flex">
+            <div class="header-inner-one flex">
+                <div class="logo">
+                    <img src="/images/logo (1).png" alt="">
+                </div>
+
+                <button class="mobile-close-btn" data-visible="false" area-controls="primary-navigation">
+                    <i class="uil uil-times-circle"></i>
+                </button>
+
+                <nav>
+                    <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                        <li><a class="fs-100 fs-montserrat bold-500" href="/home.html">Home</a></li>
+                        <li><a class="fs-100 fs-montserrat bold-500" href="/shop.html">Shop</a></li>
+                        <li><a class="active fs-100 fs-montserrat bold-500" href="/about.html">About Us</a></li>
+                        <li><a class="fs-100 fs-montserrat bold-500" href="/blog.html">Blog</a></li>
+                        <li><a class="fs-100 fs-montserrat bold-500" href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-login flex">
+                <p class="fs-100 fs-montserrat bold-500">login</p>
+                <i class="uil uil-search"></i>
+                <i id="cart-box" area-controls="cart-icon" class="uil uil-shopping-bag"></i>
+
+                <!-- cart box -->
+                 <div id="cart-icon" class="cart-icon" data-visible="false">
+                    <div class="shopping flex">
+                        <p>Shopping Basket</p>
+                        <i id="cross-btn" class="uil uil-times"></i>
+                    </div>
+                    <div class="cart bold-800 flex">
+                        <i class="uil uil-shopping-cart-alt"></i>
+                        <p>Cart is Empty</p>
+                    </div>
+                 </div>
+            </div>
+    
+            <div class="mobile-open-btn">
+                <i class="uil uil-align-right"></i>
+            </div>
+        </header>
+
+        <!-- header section ends  -->
+
+        <section class="shop-feature bg-black grid" style="opacity: 0.85;">
+            <div>
+            <p class="fs-montserrat bg-black" style="color: white; font-size: 2rem;">About <span aria-haspopup="true"></span>Us</p>
+            </div>
+        </section>
+
+        <!-- about section start -->
+         
+            <section class="about-section grid">
+                <div style="margin-top: 4rem;">
+                    <img src="https://www.instamojo.com/blog/wp-content/uploads/2022/01/how-ro-write-about-us-page.jpg" alt="">
+                </div>
+                <div class="about-info">
+                    <h3 class="fs-poppins fs-200 text-red">Welcome to Digital Ecommerce </h3>
+                    <h1 class="fs-montserrat fs-500 text-black">Who We Are?</h1>
+                    <p class="fs-montserrat fs-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, iusto! Quisquam explicabo iste illum voluptatibus autem sit sunt officia. <br><br> consectetur impedit, quis saepe veniam minus assumenda fuga ipsam non ad aliquid voluptatum voluptatem eos.  Facilis beatae ipsum accusamus ullam dolorum nulla, officia sequi cupiditate accusantium, unde quis quod magni eius?</p>
+                </div>
+                <div class="about-btn">
+                    <button class="large-btn bg-red fs-poppins" style="color: white;">Shop Now</button>
+                </div>
+            </section>
+
+         <!-- brand section -->
+     <section class="brands grid">
+        <div>
+            <img src="/images/br-1.png" alt="">
+        </div>
+        <div>
+            <img src="/images/br-2.png" alt="">
+        </div>
+        <div>
+            <img src="/images/br-3.png" alt="">
+        </div>
+        <div>
+            <img src="/images/br-4.png" alt="">
+        </div>
+        <div>
+            <img src="/images/br-5.png" alt="">
+        </div>
+     </section>
+
+     <!-- footer section -->
+     <section class="footer grid">
+        <div class="footer-logo grid">
+            <img src="/images/logo (1).png" alt="">
+            <p class="fs-montserrat fs-100"> There are many variations passages of lorem ipsum available, but he majority have</p>
+            <div class="social-media flex">
+                <i class="uil uil-facebook-f"></i>
+                <i class="uil uil-instagram"></i>
+                <i class="uil uil-twitter"></i>
+                <i class="uil uil-linkedin"></i>
+            </div>
+        </div>
+            <div class="footer-menu grid">
+                <h3  class="fs-poppins fs-200 bold-800">Quick Links</h3>
+                <ul>
+                <li><a class="fs-montserrat text-black fs-200" href="#">Home</a></li>
+                <li><a class="fs-montserrat text-black fs-200" href="#">About</a></li>
+                <li><a class="fs-montserrat text-black fs-200" href="#">Shop</a></li>
+                <li><a class="fs-montserrat text-black fs-200" href="#">Contact</a></li>
+            </div>
+        </ul>
+           
+        <div class="contact grid">
+            <h3 class="fs-poppins fs-200 bold-800">Contact</h3>
+            <p class="fs-montserrat">+91 90267 74423 vidhani jaipur Rajasthan</p>
+        </div>
+
+        <div class="emails grid">
+            <h3  class="fs-poppins fs-200 bold-800">Subscibe to our Email</h3>
+            <p class="updates fs-poppins fs-300 bold-800">For Latest news and updates</p>
+
+           <div class="inputField flex bg-gray">
+               <input type="email" placeholder="Enter your Email" class="fs-montserrat bg-gray">
+               <button class="bg-red fs-poppins fs-50" style="color: white;">Subscribe</button>
+           </div>
+
+        </div>
+  </section>
+
+  <!-- footer section ends  -->
+
+  <!-- copyright section starts  -->
+
+   <section class="copyright">
+    <p class="c-font fs-monsterrat fs-100"> 2024 estore. All rights reserved</p>
+    <p class="fs-monsterrat fs-100 text-align p-top">Privacy Policy. Term and Condition Apply</p>
+   </section>
+
+   <!-- copyright section ends -->
+
+        <script src="about.js"></script>
+        <script src="home.js"></script>
+</body>
+</html>

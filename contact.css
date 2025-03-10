@@ -1,0 +1,122 @@
+
+.contact-us{
+    justify-content: space-evenly;
+    grid-template-areas: 'one two';
+}
+
+
+.container1 {
+    width: 30rem;
+    margin-top: 4rem;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+#h1,#h2 {
+    text-align: center;
+    color: #343a40;
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+}
+.label1{
+    margin-top: 15px;
+    color: #495057;
+}
+.input1, .textarea1 {
+    margin-top: 5px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    outline: none;
+}
+.input1:focus, .textarea1:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+}
+.button1{
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button1:hover {
+    background-color: #0056b3;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+@media(min-width:35em)and (max-width:59em){
+    .container1{
+        width: 20rem;
+    }
+    .contact-us{
+        grid-template-areas: 'one two';
+    }
+}
+
+@media (max-width:35em){
+    .container1{
+        max-width: 20rem;
+    }
+    .contact-us{
+        grid-template-areas: 'one' 'two';
+    }
+}
+
+.support-container{
+    width: 90vw;
+    margin-inline: auto;
+    place-items: center;
+    --grid-gap:3rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 'one' 'two' 'three';
+}
+
+.support-container:nth-child(1){
+    grid-area: one;
+}
+.support-container:nth-child(2){
+    grid-area: two;
+}
+.support-container:nth-child(3){
+    grid-area: three;
+}
+.support-info{
+    --grid-gap:1rem;
+    place-items: center;
+}
+.support-img{
+    place-items: center;
+}
+
+@media(min-width:59em){
+    .support-container{
+        grid-template-areas: 'one two three';
+    }
+}
+
+@media (min-width:35em) and (max-width:59em){
+    .service-info1 h3{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:35rem){
+    .service-info1 h3{
+        font-size: 1rem;
+    }
+}
